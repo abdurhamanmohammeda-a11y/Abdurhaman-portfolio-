@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Abdurhaman Mohammed</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .portfolio-item {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .portfolio-item:hover { transform: translateY(-5px); }
+        .portfolio-item img { width: 100%; height: 200px; object-fit: cover; border-bottom: 2px solid #eee; }
+        .content { padding: 20px; flex-grow: 1; }
+        .portfolio-item h3 { margin: 0 0 10px 0; color: var(--primary-color); font-size: 1.25rem; }
+        .tech-stack { font-size: 0.85rem; color: #64748b; margin-bottom: 12px; font-weight: 600; }
+        .description { font-size: 0.95rem; line-height: 1.5; margin-bottom: 15px; }
+        .benefit { background: #f0fdf4; color: #166534; padding: 8px 12px; border-radius: 6px; font-size: 0.85rem; margin-bottom: 15px; }
+        .demo-link {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+            transition: opacity 0.2s;
+        }
+        .demo-link:hover { opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center; margin-bottom: 40px;">Projektoota Koo (My Portfolio)</h2>
+
+<div class="portfolio-container">
+
+    <!-- Project 1 -->
+    <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/abdurhamanmohammeda/assets/main/sbm_dashboard.png" alt="SBM Dashboard">
+        <div class="content">
+            <h3>SBM Smart Maintenance AI</h3>
+            <div class="tech-stack">Tech: HTML, CSS, JS, Firebase, AI Vision</div>
+            <p class="description">AI-powered system for industrial machines: upload images, detect issues, and track maintenance.</p>
+            <div class="benefit"><strong>Benefit:</strong> Quickly detect issues & track service history.</div>
+            <a href="https://abdurhamanmohammeda-a11y.github.io/Sbm-maintenance-appcrusher-spare-parts/" target="_blank" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/abdurhamanmohammeda/assets/main/crusher_inventory.png" alt="Inventory">
+        <div class="content">
+            <h3>Crusher Parts Inventory</h3>
+            <div class="tech-stack">Tech: HTML, CSS, JS, Firebase (Firestore)</div>
+            <p class="description">Manage crusher spare parts, track stock levels, and update inventory in real-time.</p>
+            <div class="benefit"><strong>Benefit:</strong> Efficient stock management & reduced errors.</div>
+            <a href="https://github.com/abdurhamanmohammeda/CrusherInventoryDemo" target="_blank" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/abdurhamanmohammeda/assets/main/industrial_dashboard.png" alt="Dashboard">
+        <div class="content">
+            <h3>Industrial Dashboard</h3>
+            <div class="tech-stack">Tech: HTML, CSS, JS, Data Vis</div>
+            <p class="description">Real-time monitoring of machine status and automated alerts for operators.</p>
+            <div class="benefit"><strong>Benefit:</strong> Easy monitoring & improved scheduling.</div>
+            <a href="https://github.com/abdurhamanmohammeda/IndustrialDashboardDemo" target="_blank" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/abdurhamanmohammeda/assets/main/ai_image_analyzer.png" alt="AI Analyzer">
+        <div class="content">
+            <h3>AI Image Analyzer</h3>
+            <div class="tech-stack">Tech: JS, TensorFlow.js</div>
+            <p class="description">Analyze machine images for defects via AI simulation to prevent breakdowns.</p>
+            <div class="benefit"><strong>Benefit:</strong> Detect issues quickly & reduce downtime.</div>
+            <a href="https://github.com/abdurhamanmohammeda/AIImageAnalyzerDemo" target="_blank" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/abdurhamanmohammeda/assets/main/maintenance_logger.png" alt="Maintenance Logger">
+        <div class="content">
+            <h3>Maintenance History Logger</h3>
+            <div class="tech-stack">Tech: HTML, CSS, JS, Firebase</div>
+            <p class="description">Save & view maintenance reports with timestamps for efficient tracking.</p>
+            <div class="benefit"><strong>Benefit:</strong> Organized logs & efficient maintenance tracking.</div>
+            <a href="https://github.com/abdurhamanmohammeda/MaintenanceLoggerDemo" target="_blank" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/abdurhamanmohammeda/assets/main/support_dashboard.png" alt="Support Dashboard">
+        <div class="content">
+            <h3>Subscription & Support Dashboard</h3>
+            <div class="tech-stack">Tech: HTML, CSS, JS</div>
+            <p class="description">Manage subscriptions, payments, and support contacts with a clean interface.</p>
+            <div class="benefit"><strong>Benefit:</strong> Easy management & client support access.</div>
+            <a href="https://github.com/abdurhamanmohammeda/SupportDashboardDemo" target="_blank" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="portfolio-item">
+        <img src="https://raw.githubusercontent.com/abdurhamanmohammeda/assets/main/predictive_maintenance.png" alt="Predictive Maintenance">
+        <div class="content">
+            <h3>AI-Powered Predictive Maintenance Concept</h3>
+            <div class="tech-stack">Tech: HTML, CSS, JS, AI Vision</div>
+            <p class="description">Predict machine failures via AI simulation to improve planning and reduce downtime.</p>
+            <div class="benefit"><strong>Benefit:</strong> Predict failures, improve planning & reduce downtime.</div>
+            <a href="https://github.com/abdurhamanmohammeda/PredictiveMaintenanceDemo" target="_blank" class="demo-link">Live Demo</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
